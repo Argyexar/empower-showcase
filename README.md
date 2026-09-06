@@ -34,6 +34,10 @@ Developed for the **Software Engineering course at the National Technical Univer
 - **Availability at a glance:** Distinguish between available, in-use, and offline stations through status labels and colors.
 - **Directions:** Open Google Maps directions to a selected station.
 
+![EMPower interactive charging station map](assets/image.png)
+
+
+
 ### Find a compatible connector
 
 - Filter by **Type 2, CCS, or CHAdeMO** connector type.
@@ -41,6 +45,10 @@ Developed for the **Software Engineering course at the National Technical Univer
 - Sort stations by **price**, **availability**, or **proximity to the map center**.
 - Open station details to inspect the address and individual connectors, including each connector's status, maximum power in **kW**, and price in **€/kWh**.
 - Select a specific connector before making a reservation or using the charging action.
+
+![Charging station filters](assets/image-1.png)
+
+![Station details and available connectors](assets/image-2.png)
 
 ### Reserve and manage a charging spot
 
@@ -53,6 +61,10 @@ The reservation flow connects a selected connector to a user identified by email
 5. **View the active reservation**, including remaining time and its expiration time.
 6. **Cancel the reservation** or use **Charge now** when ready.
 
+![Reservation confirmation](assets/image-3.png)
+
+![Active reservation details](assets/image-4.png)
+
 The backend checks connector availability and whether the user already has an active reservation. It also handles expired reservations and releases connectors through reservation operations. The interface displays a countdown, confirmation dialogs, loading indicators, and success or error notifications throughout the flow.
 
 ### Use the app on desktop or mobile
@@ -60,6 +72,8 @@ The backend checks connector availability and whether the user already has an ac
 On desktop, the map and station sidebar support browsing and comparing stations together. On mobile, users can switch between map and list views and open station details in a layout adapted to the smaller screen.
 
 The interface supports **light, dark, and system themes**, including matching map styles. The browser remembers the email and user ID used for reservations so the application can retrieve an active reservation on a later visit.
+
+![EMPower charging station map in dark mode](assets/image-5.png)
 
 ### Manage the provider's network
 
